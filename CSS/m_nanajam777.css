@@ -1,0 +1,457 @@
+/* sort by Beautify */
+
+/*
+** Github : http://github.com/ingether/TGD-CSS/
+** assets : http://github.com/ingether/resource/
+** Copyright(c) 2017-2019 All rights reserved by nanajam777 (contact: friendshiping777@gmail.com)
+**
+** 잉게더는 트게더의 커스텀 CSS 운영정책을 존중합니다.
+**
+** 관련 문의 ingether@hotmail.com
+*/
+
+@import url("https://ingether.github.io/TGD-CSS/CSS/common.css");
+
+/* 이모티콘들 */
+:root {
+    --img-logo: url("https://ingether.github.io/resource/image/title_m.png");
+
+    --bg-img1: url("https://ingether.github.io/resource/emoji/56/ok.gif");
+    --bg-img2: url("https://ingether.github.io/resource/emoji/56/ace.gif");
+    --bg-img3: url("https://ingether.github.io/resource/emoji/56/appear.gif");
+    --bg-img4: url("https://ingether.github.io/resource/emoji/56/clap.gif");
+    --bg-img5: url("https://ingether.github.io/resource/emoji/56/salute.gif");
+    --bg-img6: url("https://ingether.github.io/resource/emoji/56/boq.gif");
+    --bg-img7: url("https://ingether.github.io/resource/emoji/56/taebo.gif");
+    --bg-img8: url("https://ingether.github.io/resource/emoji/56/sg.gif");
+    --bg-img9: url("https://ingether.github.io/resource/emoji/56/sexy.gif");
+    --bg-img10: url("https://ingether.github.io/resource/emoji/56/bang.gif");
+    --bg-img11: url("https://ingether.github.io/resource/emoji/56/hamo.gif");
+    --bg-img12: url("https://ingether.github.io/resource/emoji/56/dw.gif");
+    --bg-img13: url("https://ingether.github.io/resource/emoji/56/kkk.gif");
+    --bg-img14: url("https://ingether.github.io/resource/emoji/56/wink.gif");
+    /* --bg-img15: url("https://ingether.github.io/TGD-CSS/gif/light.png");  */
+}
+
+/* 몸체  */
+body,
+html {
+    background: white;
+}
+
+body {
+    padding-top: 60px
+}
+
+/* 인기글 */
+#article-list>.article-list-row.hot {
+    background-color: aliceblue;
+    padding: 2px 0 2px 0;
+}
+
+/* 인기글 글자색 */
+#article-list>.article-list-row.hot>.item>.list-title>a {
+    color: black !important;
+}
+
+/* 인기글 아래 테두리 */
+#article-list>.article-list-row.hot>.item a,
+#article-list>.article-list-row.hot>.item div {
+    border-bottom: none;
+}
+
+/* 인기글 시간, 작성자, 카테고리 지우기  */
+#article-list>.article-list-row.hot>.item>.list-time,
+#article-list>.article-list-row.hot>.item>a.list-title>.list-writer,
+#article-list>.article-list-row.hot>.item>a.list-title>.list-writer.logged>.list-category>.category {
+    display: none
+}
+
+/* 헤더 부분  */
+header {
+    padding: 0;
+    background: 0 0;
+    height: 0;
+    border: 0
+}
+
+/* 헤더 */
+header>#header-area>a>h1 {
+    background-image: var(--img-logo);
+    background-size: 88px 36px;
+    width: 88px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+
+/* 돋보기, 트게더 메뉴 색상 */
+header>#header-area>#header-bar-link,
+header>#header-area>#header-search-link {
+    color: #99ccff !important;
+}
+
+/* 헤더 박스 설정 */
+header>#header-area {
+    position: fixed;
+    width: 100%;
+    border: aliceblue 3px;
+    background: rgba(233, 244, 255, .8);
+    padding: 5px 0;
+}
+
+header>#header-search-bar #header-search-input {
+    border: 2px solid #99ccff;
+    border-radius: none;
+    overflow: hidden;
+}
+
+header>#header-search-bar {
+    position: fixed;
+    width: 100%;
+    background: rgba(233, 244, 255, .8);
+    height: 46px;
+    padding: 5px 0;
+}
+
+header>#header-search-bar #header-search-btn,
+header>#header-search-bar #header-close-search-btn {
+    color: #99ccff;
+}
+
+/* 트게더 네비게이션  */
+nav#nav>.nav-header>a {
+    color: black;
+}
+
+nav#nav>.nav-header {
+    background: #d4eeff;
+    color: black;
+}
+
+#nav-overlay {
+    background-color: #99ccff;
+    opacity: .3;
+}
+
+nav#nav>.nav-menu-area a:hover,
+nav#nav>.nav-menu-area a.active {
+    color: #99ccff;
+}
+
+/* 스트리머 정보 영역  */
+#board-info {
+    background: #b3d0ff;
+    border-top: 2px solid #4078b1;
+}
+
+#board-info>h1 {
+    height: 42px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* 바로가기 아이콘들 */
+#board-info>a.board-right-menu {
+    border-left: none;
+    color: #4472bd;
+    padding: 12px 7px
+}
+
+#board-info>a.board-right-menu small {
+    display: none;
+}
+
+/* 즐겨찾기 버튼  */
+#board-info #addFavoriteBtn i {
+    color: #ffd000 !important
+}
+
+#board-info #viewers-area #viewers {
+    font-weight: 700;
+}
+
+/* 게시글 리스트  */
+#article-list {
+    line-height: 14px
+}
+
+#article-list #article-list-category {
+    border-top: none;
+    background: white;
+}
+
+#article-list #article-list-category>a {
+    font-size: 13px;
+    background: white;
+    padding: 14px 14px;
+    padding-bottom: 18px;
+}
+
+#article-reply-area>.header h5 {
+    color: #3379b7
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: transparent !important;
+    color: #4078b1;
+    border: none;
+    padding: 2px 5px 1px;
+    font-size: 14px;
+}
+
+#article-content-wrapper>.header {
+    background: #d4eeff !important;
+}
+
+#article-list>.article-list-row>.item>.list-header.v0>span {
+    background-color: transparent !important;
+    border: none
+}
+
+#article-list>.article-list-row>.item>.list-title {
+    padding: 9px 0
+}
+
+#article-list>.article-list-row>.item>a.list-title:visited {
+    color: #959595 !important
+}
+
+/* 공지글 아이콘 */
+span.a-badge i.fa.fa-info-circle {
+    color: red !important;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+    width: 150px
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header {
+    background: #d4eeff !important;
+}
+
+/* 로그인 사용자 댓글 작성자 색 */
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged {
+    color: #0066cc;
+    white-space: nowrap
+}
+
+span.a-badge {
+    width: 1.3em
+}
+
+#article-list>.article-list-row>.item>.list-title {
+    max-width: 100% !important;
+}
+
+#article-list>.article-list-row>.item>a.list-title>.title-value {
+    max-width: 240px;
+}
+
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+    padding: 0 1px;
+    color: #4078b1
+}
+
+#article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span {
+    color: #4078b1
+}
+
+#article-list>.article-list-row>.item>.list-time {
+    width: 45px;
+}
+
+/* 공지글 아래 테두리 제거 */
+#article-list>.article-list-row.notice>.item a,
+#article-list>.article-list-row.notice>.item>.list-time,
+#article-list>.article-list-row.notice>.item>.list-title {
+    border-bottom: none;
+}
+
+/* 공지글 배경  */
+#article-list>.article-list-row.notice {
+    background: #d4eeff !important;
+    padding: 2px 0 2px 0;
+}
+
+/* 공지글 제목 정렬  */
+#article-list>.article-list-row.notice>.item>a.list-title {
+    vertical-align: middle;
+}
+
+/* 공지글 시간 숨김 */
+#article-list>.article-list-row.notice>.item>a.list-title>.title-value {
+    padding-left: 6px;
+}
+
+/* 공지글 작성자 숨김 */
+#article-list>.article-list-row.notice>.item>a.list-title>.list-writer {
+    display: none;
+}
+
+
+#article-list>.article-list-row.notice>.item>.list-header {
+    width: 12px;
+}
+
+/* 공지글 이것저것 숨김 */
+#article-list>.article-list-row.notice>.item>.list-time,
+#article-list>.article-list-row.notice>.item>.list-header>strong,
+#article-list>.article-list-row.notice>.item>.list-header>b,
+#article-list>.article-list-row.notice>.item>a.list-title>small.comment-count {
+    display: none;
+}
+
+#article-info>h2 {
+    font-weight: 700
+}
+
+#article-list>.article-list-row>.item>a.list-title {
+    line-height: 17px
+}
+
+/* 아이콘 숨김 */
+#header-top-notice strong.notice-badge {
+    display: none;
+}
+
+#header-notification-badge {
+    display: none
+}
+
+/** 글작성 후 보이는 이미지 수정**/
+img[alt="JKanStyle"],
+#article-content-wrapper #article-content img[alt="JKanStyle"] {
+    background: var(--bg-img1);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="OptimizePrime"],
+#article-content-wrapper #article-content img[alt="OptimizePrime"] {
+    background: var(--bg-img2);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="StoneLightning"],
+#article-content-wrapper #article-content img[alt="StoneLightning"] {
+    background: var(--bg-img3);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="TheRinger"],
+#article-content-wrapper #article-content img[alt="TheRinger"] {
+    background: var(--bg-img4);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="RedCoat"],
+#article-content-wrapper #article-content img[alt="RedCoat"] {
+    background: var(--bg-img5);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="Kappa"],
+#article-content-wrapper #article-content img[alt="Kappa"] {
+    background: var(--bg-img6);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="JonCarnage"],
+#article-content-wrapper #article-content img[alt="JonCarnage"] {
+    background: var(--bg-img7);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="BCWarrior"],
+#article-content-wrapper #article-content img[alt="BCWarrior"] {
+    background: var(--bg-img8);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="GingerPower"],
+#article-content-wrapper #article-content img[alt="GingerPower"] {
+    background: var(--bg-img9);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="DansGame"],
+#article-content-wrapper #article-content img[alt="DansGame"] {
+    background: var(--bg-img10);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="SwiftRage"],
+#article-content-wrapper #article-content img[alt="SwiftRage"] {
+    background: var(--bg-img11);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="PJSalt"],
+#article-content-wrapper #article-content img[alt="PJSalt"] {
+    background: var(--bg-img12);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="KevinTurtle"],
+#article-content-wrapper #article-content img[alt="KevinTurtle"] {
+    background: var(--bg-img13);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+}
+
+img[alt="ArsonNoSexy"],
+#article-content-wrapper #article-content img[alt="ArsonNoSexy"] {
+    background: var(--bg-img14);
+    width: 100px;
+    height: 100px !important;
+    padding-left: 100px;
+    background-size: 100px 100px;
+}
+
+/*
+#article-content-wrapper #article-content img[alt="SMOrc"] {
+    background: var(--bg-img15);
+    width: 50px;
+    height: 50px !important;
+    padding-left: 50px;
+    background-size: 50px 50px;
+} */

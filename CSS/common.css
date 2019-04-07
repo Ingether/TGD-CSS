@@ -1,0 +1,529 @@
+/* sort by Beautify */
+
+/*
+** Github : http://github.com/ingether/TGD-CSS/
+** assets : http://github.com/ingether/resource/
+** Copyright(c) 2017-2019 All rights reserved by nanajam777 (contact: friendshiping777@gmail.com)
+**
+** 잉게더는 트게더의 커스텀 CSS 운영정책을 존중합니다.
+**
+** 관련 문의 ingether@hotmail.com
+*/
+
+/* @todo: replace to thumbnail for optimizing data */
+:root {
+    --color0: #99ccff;
+    --color1: #70b7ff;
+    --color2: #0099ff;
+    --color3: #96c7f7;
+    --color4: #ffd000;
+    --color5: #ffb300;
+    --color6: #99dd77;
+    --color7: #66a757;
+
+    --img-badge: url("https://ingether.github.io/resource/image/badge.png");
+    --img-totop: url("https://ingether.github.io/resource/image/movetotop.png");
+
+    --bg-img1-t: url("https://ingether.github.io/resource/emoji/24/ok.png");
+    --bg-img2-t: url("https://ingether.github.io/resource/emoji/24/ace.png");
+    --bg-img3-t: url("https://ingether.github.io/resource/emoji/24/appear.png");
+    --bg-img4-t: url("https://ingether.github.io/resource/emoji/24/clap.png");
+    --bg-img5-t: url("https://ingether.github.io/resource/emoji/24/salute.png");
+    --bg-img6-t: url("https://ingether.github.io/resource/emoji/24/boq.png");
+    --bg-img7-t: url("https://ingether.github.io/resource/emoji/24/taebo.png");
+    --bg-img8-t: url("https://ingether.github.io/resource/emoji/24/sg.png");
+    --bg-img9-t: url("https://ingether.github.io/resource/emoji/24/sexy.png");
+    --bg-img10-t: url("https://ingether.github.io/resource/emoji/24/bang.png");
+    --bg-img11-t: url("https://ingether.github.io/resource/emoji/24/hamo.png");
+    --bg-img12-t: url("https://ingether.github.io/resource/emoji/24/dw.png");
+    --bg-img13-t: url("https://ingether.github.io/resource/emoji/24/kkk.png");
+    --bg-img14-t: url("https://ingether.github.io/resource/emoji/24/wink.png");
+    /* --bg-img15-t: url("https://ingether.github.io/resource/emoji/24/light.png"); */
+}
+
+/* change popular posts' icon */
+span.a-badge i.fa.fa-star {
+    opacity: 100;
+    color: rgba(95, 02, 22, 0);
+    vertical-align: 2px !important;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background: var(--img-badge);
+    animation: infinite rot360 1.2s;
+}
+
+/* keyframe animations */
+@keyframes ingether {
+    0% {
+        color: #6441a5;
+    }
+
+    40% {
+        color: #0099ff;
+    }
+
+    100% {
+        color: #6441a5;
+    }
+}
+
+@keyframes AnimFeed {
+    0% {
+        background-color: #ffffff;
+    }
+
+    40% {
+        background-color: #d4eeff;
+    }
+
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+@keyframes rot360 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/* go to top */
+#movetotop img {
+    display: none
+}
+
+#movetotop {
+    display: inline-block;
+    opacity: 1;
+    background: var(--img-totop);
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+}
+
+/* 드롭다운 트랜지션 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu>li>a {
+    transition: .1s;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.04);
+    transition: .1s;
+}
+
+/* 페이지 하단  */
+/* 페이지 버튼 - 일반  */
+.pagination>li>a,
+.pagination>li>span {
+    color: white;
+    border: none;
+    background-color: var(--color0);
+}
+
+/* 페이지버튼 - 포커스, 마우스오버 */
+.pagination>li>a:hover,
+.pagination>.active>a,
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:hover,
+.pagination>.active>span:focus {
+    color: white;
+    background-color: var(--color1);
+    transition: all ease-in-out .1s;
+}
+
+/* 검색창필드 */
+div #article-list #boardSearchForm {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    background: var(--color3);
+    padding: 5px 5px;
+    border-radius: none !important;
+}
+
+div #article-list #boardSearchForm .btn,
+div #article-list #boardSearchForm input {
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    border: 0;
+}
+
+div #article-list #boardSearchForm input {
+    background: #ffffff;
+    padding-left: -3px;
+    padding-right: -3px;
+    border-left: 8px solid var(--color3);
+    border-right: 8px solid var(--color3);
+    border-radius: none !important;
+}
+
+
+/* 버튼 전체 */
+/* 걍 버튼  */
+.btn {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 0px;
+    border: none;
+    position: relative;
+    min-width: 80px;
+    /* min-height: 32px; */
+    /* font-weight: 700; */
+    cursor: pointer;
+    transition: 500ms ease all;
+    outline: none;
+}
+
+.btn>span {
+    /* font-size: 12pt; */
+    color: white !important;
+}
+
+.btn:hover {
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    transition: 200ms ease all;
+}
+
+.btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn:hover:before,
+.btn:hover:after {
+    width: 100%;
+    transition: 500ms ease all;
+}
+
+/* 인기글 버튼 */
+.btn.best {
+    background: var(--color4) !important;
+    color: #fff !important;
+}
+
+.btn.best:hover>span {
+    color: var(--color4) !important;
+}
+
+.btn.best:hover {
+    background: #fff !important;
+    color: var(--color4) !important;
+}
+
+.btn.best:before,
+.btn.best:after {
+    background: var(--color4);
+}
+
+/* 글쓰기 버튼 */
+.btn-primary {
+    background: var(--color3);
+    color: #fff !important;
+}
+
+.btn-primary>span {
+    color: white !important;
+}
+
+.btn-primary:hover>span {
+    color: var(--color3) !important;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: var(--color3) !important;
+}
+
+.btn-primary:before,
+.btn-primary:after {
+    background: var(--color3);
+}
+
+/* 투표 목록보기  */
+#showResultVoteBtn.btn-default {
+    background: var(--color6) !important;
+    color: white !important;
+}
+
+#showResultVoteBtn.btn-default>span {
+    color: white !important;
+}
+
+#showResultVoteBtn.btn-default:hover>span {
+    color: var(--color6) !important;
+}
+
+#showResultVoteBtn.btn-default:hover {
+    color: var(--color6) !important;
+    background: white !important;
+}
+
+#showResultVoteBtn.btn-default:before,
+#showResultVoteBtn.btn-default:after {
+    background: var(--color6);
+}
+
+/* 하단 검색창 버튼 */
+.input-group-btn>.btn {
+    background: var(--color1) !important;
+    color: #fff !important;
+    min-width: 0px !important;
+}
+
+.input-group-btn>.btn>span {
+    color: white !important;
+}
+
+.input-group-btn>.btn:hover>span {
+    color: var(--color1) !important;
+}
+
+.input-group-btn>.btn:hover {
+    background: #fff !important;
+    color: var(--color1) !important;
+}
+
+/* 끄기 */
+.input-group-btn>.btn::after,
+.input-group-btn>.btn::before {
+    content: none !important;
+}
+
+
+/* 좋아요 버튼  */
+.vote-area>.btn-outline-success {
+    background: var(--color1) !important;
+    width: 80px !important;
+    height: 60px !important;
+    font-size: 0 !important;
+    font-weight: 700 !important;
+    padding: 0 2em !important;
+    outline: none !important;
+}
+
+.vote-area>.btn-outline-success>span {
+    font-size: 12pt;
+    color: white !important;
+}
+
+.vote-area>.btn-outline-success:hover>span {
+    font-size: 14pt;
+    color: var(--color1) !important;
+}
+
+.vote-area>.btn-outline-success:hover {
+    background: #fff !important;
+    color: var(--color1) !important;
+}
+
+.vote-area>.btn-outline-success:before,
+.vote-area>.btn-outline-success:after {
+    background: var(--color1);
+}
+
+
+/* 목록 및 스크랩  */
+/* a.btn:nth-child(4),
+a.btn:nth-child(3),
+a.btn:nth-child(2),
+a.btn-sm:nth-child(1) {
+    width: 75px;
+    height: 32px;
+    color: wthie !important;
+    margin-top: 0;
+    margin-bottom: 6px;
+    border: 3px solid var(--color2) !important;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0 6px 0 0 var(--color2);
+    outline: 0 !important;
+}
+
+a.btn:nth-child(4):hover,
+a.btn:nth-child(3):hover,
+a.btn:nth-child(2):hover,
+a.btn-sm:nth-child(1):hover {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: var(--color3);
+    border-color: var(--color2) !important;
+    box-shadow: 0 3px 0 0 var(--color2);
+    transition: all ease-in-out .1s;
+}
+
+a.btn:nth-child(4):active,
+a.btn:nth-child(3):active,
+a.btn:nth-child(2):active,
+a.btn-sm:nth-child(1):active {
+    margin-top: 6px;
+    margin-bottom: 0;
+    background-color: var(--color2);
+    box-shadow: 0 0 0 0 var(--color2);
+    color: white !important;
+} */
+
+
+.fr-command.fr-emoticon[data-param1=JKanStyle]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img1-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=OptimizePrime]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img2-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=StoneLightning]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img3-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=TheRinger]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img4-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=RedCoat]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img5-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=Kappa]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img6-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=JonCarnage]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img7-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=BCWarrior]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img8-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=GingerPower]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img9-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=DansGame]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img10-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=SwiftRage]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img11-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=PJSalt]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img12-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=KevinTurtle]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img13-t);
+    background-size: 100%;
+}
+
+.fr-command.fr-emoticon[data-param1=ArsonNoSexy]>img {
+    width: 24px !important;
+    height: 24px !important;
+    padding-left: 24px;
+    background-image: var(--bg-img14-t);
+    background-size: 100%;
+}
+
+/* .fr-command.fr-emoticon[data-param1=SMOrc] > img { 
+    width: 24px !important; 
+    height: 24px !important; 
+    padding-left: 24px;
+    background-image: var(--bg-img15-t);
+    background-size: 100%;
+} */
