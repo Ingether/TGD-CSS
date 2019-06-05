@@ -303,7 +303,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "잉게더 망령 수 세기가 귀찮습니다";
+    content: "잉게더에 오신 것을 환영합니다!";
     cursor: text;
     font-size: 14px;
 }
