@@ -299,11 +299,13 @@ header #header-bar #header-top-notice strong.notice-badge {
     color: #326eaa;
     font-weight: 400;
     font-family: 'BRRA_R';
+    font-size: 0px;
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "잉게더 망령 ";
+    content: "잉게더 망령 수 세기가 귀찮습니다";
     cursor: text;
+    font-size: 14px;
 }
 
 #board-info #viewers-area #viewers:after {
@@ -490,3 +492,7 @@ header #header-bar #header-top-notice strong.notice-badge {
     background-image: var(--bg-img15);
     background-size: 100%; 
 } */
+
+#board-info h1 .badge {
+    display: none;
+}

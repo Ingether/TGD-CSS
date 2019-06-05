@@ -455,3 +455,13 @@ img[alt="ArsonNoSexy"],
     padding-left: 50px;
     background-size: 50px 50px;
 } */
+
+/* viewers */
+#board-info #viewers-area .fa,
+#board-info #viewers-area #viewers {
+    display: none !important;
+}
+
+#board-info h1 .badge {
+    display: none;
+}
