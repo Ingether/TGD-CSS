@@ -303,9 +303,9 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "잉게더에 오신 것을 환영합니다!";
+    content: "행복 잉게더에 오신 것을 환영합니다!";
     cursor: text;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #board-info #viewers-area #viewers:after {
