@@ -493,6 +493,6 @@ header #header-bar #header-top-notice strong.notice-badge {
     background-size: 100%; 
 } */
 
-#board-info h2 .badge {
+#board-info h1 .badge-success {
     display: none;
 }

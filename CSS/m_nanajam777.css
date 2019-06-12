@@ -462,6 +462,6 @@ img[alt="ArsonNoSexy"],
     display: none !important;
 }
 
-#board-info h2 .badge {
+#board-info h1 .badge-success {
     display: none;
 }
