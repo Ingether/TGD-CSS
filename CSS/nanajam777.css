@@ -329,6 +329,30 @@ header #header-bar #header-top-notice strong.notice-badge {
     margin: .1em;
 }
 
+/* 하트 애니메이션  */
+.fa-heart {
+    animation: heart 1s infinite
+}
+
+@keyframes heart {
+    0% {
+        font-size: 14px
+    }
+    40% {
+        font-size: 14px
+    }
+    50% {
+        font-size: 18px
+    }
+    60% {
+        font-size: 14px
+    }
+    100% {
+        font-size: 14px
+    }
+}
+
+
 /* 키프레임 */
 @-webkit-keyframes background-pos {
     0% {
