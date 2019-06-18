@@ -43,6 +43,28 @@ body {
     padding-top: 60px
 }
 
+/* 하트 애니메이션  */
+.favo .fa-heart {
+    animation: heart 1s infinite
+}
+
+@keyframes heart {
+    0% {
+        font-size: 14px
+    }
+    40% {
+        font-size: 14px
+    }
+    50% {
+        font-size: 16px
+    }
+    60% {
+        font-size: 14px
+    }
+    100% {
+        font-size: 14px
+    }
+}
 /* 인기글 */
 #article-list>.article-list-row.hot {
     background-color: aliceblue;
