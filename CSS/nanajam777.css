@@ -330,7 +330,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 /* 하트 애니메이션  */
-.fa-heart {
+.favo .fa-heart {
     animation: heart 1s infinite
 }
 
