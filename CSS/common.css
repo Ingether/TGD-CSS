@@ -21,7 +21,7 @@
     --color6: #99dd77;
     --color7: #66a757;
 
-    --img-badge: url("https://ingether.github.io/resource/image/badge.png");
+    --img-badge: url("https://ingether.github.io/resource/image/badge18.png");
     --img-totop: url("https://ingether.github.io/resource/image/movetotop.png");
 
     --bg-img1-t: url("https://ingether.github.io/resource/emoji/24/ok.png");
@@ -85,7 +85,7 @@ span.a-badge i.fa.fa-star {
 
 @keyframes rot360 {
     from {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 
     to {
