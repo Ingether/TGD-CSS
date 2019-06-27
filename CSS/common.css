@@ -366,6 +366,22 @@ div #article-list #boardSearchForm input {
     background: var(--color1);
 }
 
+/* 엔터탁 */
+#article-write-button {
+    font-size: 0px;
+    min-height: 30px;
+    min-width: 50px;
+}
+
+#article-write-button>i:after {
+    content: "엔터탁";
+    vertical-align: middle;
+    font-size: 14px;
+    min-height: 30px;
+    min-width: 80px;
+    padding: 6px 12px;
+}
+
 
 /* 목록 및 스크랩  */
 /* a.btn:nth-child(4),
