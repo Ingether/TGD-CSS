@@ -367,7 +367,7 @@ div #article-list #boardSearchForm input {
 }
 
 /* 엔터탁 */
-#article-write-button {
+/* #article-write-button {
     font-size: 0px;
     min-height: 30px;
     min-width: 50px;
@@ -380,7 +380,7 @@ div #article-list #boardSearchForm input {
     min-height: 30px;
     min-width: 80px;
     padding: 6px 12px;
-}
+} */
 
 
 /* 목록 및 스크랩  */
