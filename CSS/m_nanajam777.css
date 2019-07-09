@@ -30,7 +30,7 @@
     --bg-img12: url("https://ingether.github.io/resource/emoji/56/dw.gif");
     --bg-img13: url("https://ingether.github.io/resource/emoji/56/kkk.gif");
     --bg-img14: url("https://ingether.github.io/resource/emoji/56/wink.gif");
-    /* --bg-img15: url("https://ingether.github.io/TGD-CSS/gif/light.png");  */
+    --bg-img15: url("https://ingether.github.io/resource/emoji/56/thumb.png"); 
 }
 
 /* 몸체  */
@@ -469,14 +469,14 @@ img[alt="ArsonNoSexy"],
     background-size: 100px 100px;
 }
 
-/*
+
 #article-content-wrapper #article-content img[alt="SMOrc"] {
     background: var(--bg-img15);
     width: 50px;
     height: 50px !important;
     padding-left: 50px;
     background-size: 50px 50px;
-} */
+}
 
 /* viewers */
 #board-info #viewers-area .fa,

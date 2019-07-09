@@ -38,7 +38,7 @@
     --bg-img12-t: url("https://ingether.github.io/resource/emoji/24/dw.png");
     --bg-img13-t: url("https://ingether.github.io/resource/emoji/24/kkk.png");
     --bg-img14-t: url("https://ingether.github.io/resource/emoji/24/wink.png");
-    /* --bg-img15-t: url("https://ingether.github.io/resource/emoji/24/light.png"); */
+    --bg-img15-t: url("https://ingether.github.io/resource/emoji/24/thumb.png");
 }
 
 /* change popular posts' icon */
@@ -536,10 +536,10 @@ a.btn-sm:nth-child(1):active {
     background-size: 100%;
 }
 
-/* .fr-command.fr-emoticon[data-param1=SMOrc] > img { 
+ .fr-command.fr-emoticon[data-param1=SMOrc] > img { 
     width: 24px !important; 
     height: 24px !important; 
     padding-left: 24px;
     background-image: var(--bg-img15-t);
     background-size: 100%;
-} */
+}

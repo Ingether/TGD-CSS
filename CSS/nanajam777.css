@@ -37,7 +37,7 @@
     --bg-img12: url("https://ingether.github.io/resource/emoji/112/dw.gif");
     --bg-img13: url("https://ingether.github.io/resource/emoji/112/kkk.gif");
     --bg-img14: url("https://ingether.github.io/resource/emoji/112/wink.gif");
-    /* --bg-img15: url("https://ingether.github.io/resource/emoji/112/light.png"); */
+    --bg-img15: url("https://ingether.github.io/resource/emoji/112/thumb.png"); 
 }
 
 /* 배경 그라디언트 */
@@ -509,13 +509,13 @@ header #header-bar #header-top-notice strong.notice-badge {
     background-size: 100%;
 }
 
-/* .fr-emoticon.fr-deletable > img[alt=SMOrc]{ 
+.fr-emoticon.fr-deletable > img[alt=SMOrc]{ 
     width: 112px !important;
     height: 112px !important;
     padding-left: 112px !important;
     background-image: var(--bg-img15);
     background-size: 100%; 
-} */
+}
 
 #board-info h1 .badge-success {
     display: none;
