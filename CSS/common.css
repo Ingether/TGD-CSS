@@ -366,6 +366,20 @@ div #article-list #boardSearchForm input {
     background: var(--color1);
 }
 
+.btn-outline-danger {
+    color: #d9534f !important;
+    background-image: none !important;
+    background-color: white !important;
+    border:solid 1px #d9534f !important;
+}
+
+.btn-outline-danger:hover {
+    color: white !important;
+    background-image: none !important;
+    background-color: #d9534f !important;
+    border: solid 1px white !important;
+}
+
 /* 엔터탁 */
 /* #article-write-button {
     font-size: 0px;
